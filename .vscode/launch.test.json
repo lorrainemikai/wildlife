@@ -1,0 +1,28 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "wildlife-tracker",
+                "projectName": "wildlife-tracker",
+                "workingDirectory": "/home/lorraine/Documents/Java/wildlife-tracker",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "wildlife-tracker",
+                "projectName": "wildlife-tracker",
+                "workingDirectory": "/home/lorraine/Documents/Java/wildlife-tracker",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
