@@ -53,4 +53,17 @@ public class EndangeredAnimalTest {
       EndangeredAnimal savedEndangeredAnimal = EndangeredAnimal.find(testEndangeredAnimal.getId());
       assertEquals(savedEndangeredAnimal.getAnimalId(), testAnimal.getId());
     }
+    @Test
+    public void monster_instantiatesWithHalfFullAgeLevel(){
+        Endangered testEndangeredAnimal = new EndangeredAnimal("koala",3);
+        assertEquals(testEndangeredAnimal.getAgeLeve(),(EndangeredAnimal.MAX_AGE_LEVEL/ 158)); 
+    }
+
+    @Test
+    public void monster_instantiatesWithHalfFullHealthLevel(){
+        Endangered testEndangeredAnimal = new EndangeredAnimal("koala",3);
+        assertEquals(testEndangeredAnimal.getHealthLeve(),(EndangeredAnimal.MAX_HEALTH_LEVEL /4)); 
+    }
+
+    
 }
