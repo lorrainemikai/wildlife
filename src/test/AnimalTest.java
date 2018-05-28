@@ -1,5 +1,6 @@
 import org.junit.*;
 import static org.junit.Assert.*;
+import org.sql2o.*;
 
 public class AnimalTest{
     @Test
@@ -18,5 +19,17 @@ public class AnimalTest{
     public void getHealth_personInsantiatesWithEmail_String() {
         Animal testAnimal = new Animal("Orengtan","healthy");
         assertEquals("healthy", testAnimal.getHealth());
+    }
+    @Override
+    public boolean equals(Object otherAnimal){
+        if (!(otherAnimal instanceof Animal)){
+            return false;
+        }else{
+            Animal newAnimal = (Animal) otherAnimal;
+            return this.getName().equals(newPerson,getName())&&
+            this.getHealth().equals(newAnimal.getHealth());
+        }
+
+
     }
 }
