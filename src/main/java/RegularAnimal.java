@@ -1,7 +1,7 @@
 import org.sql2o.*;
 import java.util.List;
-import java.util.ArrayList;
-import java.sql.Timestamp;
+// import java.util.ArrayList;
+// import java.sql.Timestamp;
 
 public class RegularAnimal extends Animal {
 

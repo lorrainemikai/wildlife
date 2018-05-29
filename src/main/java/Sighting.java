@@ -1,9 +1,9 @@
 import org.sql2o.*;
-import java.util.ArrayList;
+// import java.util.ArrayList;
 import java.util.List;
 import java.sql.Timestamp;
-import java.util.Date;
-import java.text.SimpleDateFormat;
+// import java.util.Date;
+// import java.text.SimpleDateFormat;
 
 public class Sighting implements DatabaseManagement{
     private String location;
@@ -15,8 +15,8 @@ public class Sighting implements DatabaseManagement{
     public Sighting(String location, String rangerName, int animalId) {
         if(rangerName.equals("")) {
             throw new IllegalArgumentException("Please enter Ranger name.");
-        }        //Thrown  an exception for a user to be prompted to enter their Ranger name.
-        this.location = location;
+        }        
+             this.location = location;
         this.rangerName = rangerName;
         this.animalId = animalId;
         // this.save();

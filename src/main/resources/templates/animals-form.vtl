@@ -1,0 +1,36 @@
+<form>
+  <div class="form-group">
+    <label for="animalname">Name</label>   
+  </div>
+  <div class="form-group">
+    <label for="animalshealth">Health</label>
+  </div>
+    <div class="form-group">
+    <label for="animalage">Age</label>
+  </div>
+ <a href="/success"> <button type="submit" class="btn btn-primary">Submit</button></a>
+</form>
+            #if ($AnimalClass.getAnimalName($sighting.getAnimalId()))
+              <td>$AnimalClass.getAnimalName($sighting.getAnimalId())</td>
+            #else
+              <td></td>
+            #end
+            #if ($AnimalClass.getAnimalHealth($sighting.getAnimalId()))
+              <td>$AnimalClass.getAnimalHealth($sighting.getAnimalId())</td>
+            #else
+              <td></td>
+            #end
+
+            #if ($AnimalClass.getAnimalAge($sighting.getAnimalId()))
+              <td>$AnimalClass.getAnimalAge($sighting.getAnimalId())</td>
+            #else
+              <td></td>
+            #end
+
+            <td>$sighting.getTimestamp()</td>
+          </tr>
+        #end
+      </tbody>
+    </table>
+  </div>
+</div>
